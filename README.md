@@ -1,5 +1,7 @@
 # Projekt Kochbuch Planung
 
 ## Mockups
-- [Rezeptansicht](https://inf16a.github.io/kochbuch-planung/Mockups/rezeptansicht.html)  
-- [Rezeptliste](https://inf16a.github.io/kochbuch-planung/Mockups/Rezeptliste.html)
+### Rezeptansicht
+- [Leandro](https://inf16a.github.io/kochbuch-planung/Mockups/Rezeptansicht_Leandro.html)  
+### Rezeptliste
+- [Patrick](https://inf16a.github.io/kochbuch-planung/Mockups/Rezeptliste_Patrick.html)
