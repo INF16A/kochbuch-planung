@@ -1,0 +1,307 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px; /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+
+        * {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+        }
+
+        button {
+            font-size: 20px;
+        }
+
+        .generalInfo-img {
+            height: 150px;
+            width: 150px;
+        }
+
+        .list-no-dots {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex {
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-wrap: nowrap;
+        }
+
+        .flex-row {
+            flex-direction: row;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .flex-space-between {
+            justify-content: space-between;
+        }
+
+        .flex-align-start {
+            align-items: flex-start;
+        }
+
+        .content {
+            background-color: white;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            padding: 20px;
+        }
+
+        .margin-bottom-15 {
+            margin-bottom: 10px;
+        }
+
+        .margin-top-15 {
+            margin-top: 10px;
+        }
+
+        .img150 {
+            width: 150px !important;
+            height: 150px !important;
+        }
+
+        table {
+            border: none;
+            border-collapse: collapse;
+            width: 100%;
+            padding: 24px;
+            opacity: 0.85;
+            background-color: white;
+            box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.082);
+        }
+
+        th, td {
+            padding-left: 24px;
+            padding-right: 24px;
+            border-bottom: 1px solid #aaa;
+            text-align: end;
+            font-size: 16px;
+            font-weight: 400;
+            opacity: 0.75;
+            text-align: left;
+        }
+
+        th {
+            opacity: 0.9;
+            background-color: #d7a225;
+        }
+
+        tr {
+            height: 32px;
+            margin: 0px 16px;
+        }
+
+        fieldset {
+            border: none;
+            /*border: 1px solid #a8a8a8;*/
+            margin-top: 25px;
+            padding: 15px;
+        }
+
+        fieldset > legend {
+            font-weight: 600;
+            font-size: 23px;
+        }
+
+        .li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #c2c2c2;
+        }
+
+        .description {
+            width: 100%;
+            height: auto;
+            margin-right: 20px;
+            margin-top: 10px;
+            resize: none;
+        }
+
+        .tag {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            border: 1px solid #a1a1a1;
+            margin: 15px;
+            margin-bottom: 0;
+            border-radius: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .tag > p {
+            margin: 0;
+            margin-right: 10px;
+        }
+
+        .tag > input {
+            border: none;
+        }
+
+        .tag > i {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body style="width:50%; position: absolute; left: 25%; background-color: #f6f6f6;">
+
+<div class="content">
+
+    <div class="flex flex-col">
+        <div class="flex flex-row flex-space-between margin-bottom-15">
+            <div style="width: 100%; margin-right: 10px">
+                <input placeholder="Titel" value="Beispiel"/>
+                <div class="displayFlex flex-row flex-space-between flex-align-start ">
+                    <div>
+                        <p style="margin-bottom: 0">Beschreibung</p>
+                        <textarea maxlength="500" class="description">Das orangefarbene Symbol für Rezepte im Herbst ist der Kürbis – seine strahlende Farbe und sein würziges Fleisch passen einfach perfekt zur goldenen Jahreszeit. Meistens wird Kürbis zu Suppe verarbeitet, denn diese steht im Herbst auch hoch im Kurs. Was gibt es auch Schöneres, als es sich nach einem verregneten Tag im Herbst mit einer wärmenden Suppe oder einem deftigen Eintopf zu Hause gemütlich zu machen? Besonders schnell geht die Zubereitung mit einem Schnellkochtopf.</textarea>
+                    </div>
+
+                    <ul class="list-no-dots margin-top-15">
+                        <li class="flex flex-row flex-space-between">
+                            <label>Schwierigkeit</label>
+                            <input type="text" minlength="5"/>
+                        </li>
+                        <li class="flex flex-row flex-space-between">
+                            <label>Anzahl an Personen</label>
+                            <input type="number" placeholder="4"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="generalInfo-img" alt="Bild Fertig"/>
+        </div>
+
+        <div class="flex flex-row flex-wrap flex-align-start" style="margin-right: 10px; margin-left: 10px;">
+            <div class="tag">
+                <p>Tag1</p>
+                <i class="material-icons">clear</i>
+            </div>
+            <div class="tag">
+                <input placeholder="Tag hinzufügen" type="text"/>
+                <i class="material-icons">done_all</i>
+            </div>
+        </div>
+    </div>
+
+    <fieldset>
+        <legend>Zutaten</legend>
+        <table>
+            <tr>
+                <td>3</td>
+                <td>Eier</td>
+                <td style="text-align: right">
+                    <button>Edit</button>
+                    <button>Löschen</button>
+                </td>
+            </tr>
+            <tr>
+                <td>500g</td>
+                <td>Mehl</td>
+                <td style="text-align: right">
+                    <button>Edit</button>
+                    <button>Löschen</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5l</td>
+                <td>Wasser</td>
+                <td style="text-align: right">
+                    <button>Edit</button>
+                    <button>Löschen</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kekse</td>
+                <td style="text-align: right">
+                    <button>Edit</button>
+                    <button>Löschen</button>
+                </td>
+            </tr>
+        </table>
+        <p>Zutat hinzufügen</p>
+        <div class="displayFlex">
+            <label>Zutat</label>
+            <input type="text"/>
+            <label>Menge (Einheit: g)</label>
+            <input type="number"/>
+            <button>Speichern</button>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Zubereitung</legend>
+        <ol class="list-steps">
+            <li class="li">
+                <div class="flex flex-row flex-space-between flex-align-start">
+                    <div class="flex flex-col flex-align-start">
+                        Aufwand: 10 Minuten<br/>
+                        Das Mehl mit dem Zucker mischen und 9 Minuten und 10 Sekunden anstarren.
+                    </div>
+                    <div class="flex flex-col flex-align-start">
+                        <img class="img150" alt="Drag to upload"/>
+                        <div class="flex flex-row flex-space-between" style="width: 100%; margin-top: 10px;">
+                            <button style="width: 45%">Delete</button>
+                            <button style="width: 45%">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="li">
+                <div class="flex flex-row flex-space-between flex-align-start">
+                    <div class="flex flex-col flex-align-start">
+                        <div>
+                            <label>Aufwand (in min)</label>
+                            <input type="number" placeholder="Aufwand">
+                        </div>
+                        <textarea class="description" placeholder="Beschreibung hier eingeben..."></textarea>
+                    </div>
+                    <div class="flex flex-col flex-align-start">
+                        <img class="img150" alt="Drag to upload"/>
+                        <button style="width: 100%; margin-top: 10px;">Speichern</button>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </fieldset>
+
+</div>
+</body>
+</html>
